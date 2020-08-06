@@ -1,0 +1,157 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5219158382,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am on  login page",
+            "match": {
+              "location": "LoginSD.verifyLoginPageTitle()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3747241828,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.setUp()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Verify invalid login from login page",
+        "description": "",
+        "id": "login-page-feature;verify-invalid-login-from-login-page",
+        "after": [
+          {
+            "result": {
+              "duration": 150838360,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SharedSD.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 576028440,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I enter hayriyebaskan@gmail.com into Email address field on the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hayriyebaskan@gmail.com",
+                  "offset": 8
+                },
+                {
+                  "val": "Email address",
+                  "offset": 37
+                }
+              ],
+              "location": "LoginSD.enterDataIntoTextField(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 285415191,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I enter test12345 into password field on the login page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test12345",
+                  "offset": 8
+                },
+                {
+                  "val": "password",
+                  "offset": 23
+                }
+              ],
+              "location": "LoginSD.enterDataIntoTextField(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 170534915,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I click on login button login page",
+            "match": {
+              "location": "LoginSD.clickOnLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 235382364,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I verify invalid login message on login page",
+            "match": {
+              "location": "LoginSD.verifySignInErrorMessage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100687289,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on sign up link on login page",
+            "match": {
+              "location": "LoginSD.ClickOnSignUpLink()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "login page feature",
+    "description": "",
+    "id": "login-page-feature",
+    "keyword": "Feature",
+    "uri": "Login.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@web"
+      }
+    ]
+  }
+]
